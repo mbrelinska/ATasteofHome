@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pot Roast | A Taste of Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comforting homemade pot roast with tender beef, potatoes, carrots, and vegetables slow cooked in a rich sauce. Perfect for a cozy family dinner.">
+    <meta name="keywords" content="pot roast, homemade pot roast, beef roast, slow cooked beef, pot roast with vegetables, family dinner recipes">
+    <link rel="stylesheet" type="text/css" href="atasteofhome.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header>
+
+        <div class="language">
+            <a href="potroast.html">EN</a> |
+            <a href="potroast_polish.html">PL</a>
+        </div>
+
+        <h1>
+            <a href="index.html">A Taste of Home</a>
+        </h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="soups.html">Soups</a></li>
+            <li><a href="dinner.html">Main</a></li>
+            <li><a href="desserts.html">Desserts</a></li>
+            <li><a href="pantry.html">Pantry</a></li>
+        </ul>
+    </nav>
+
+    <div class="recipe-menu">
+
+        <label for="recipeSelect">Choose a recipe:</label>
+
+        <select id="recipeSelect"
+                onchange="if (this.value) window.location.href=this.value;">
+
+            <option value="">Choose a recipe</option>
+
+            <option value="potroast.html">
+                Pot Roast
+            </option>
+
+        </select>
+
+    </div>
+
+    <main>
+
+        <section class="recipe">
+
+            <h2 class="recipe-title">Pot Roast</h2>
+
+            <div class="recipe-intro">
+
+                <div class="recipe-description">
+
+                    <p>
+                        This pot roast is the perfect comfort food for a
+                        cold day. The beef cooks slowly until tender while
+                        the potatoes, carrots, and vegetables soak up the
+                        rich sauce. It is warm, filling, and perfect for
+                        a cozy dinner at home.
+                    </p>
+
+                </div>
+
+                <img class="recipe-photo"
+                     src="potroast.jpeg"
+                     alt="Pot Roast with potatoes and carrots">
+
+            </div>
+
+            <div class="recipe-details">
+
+                <div class="ingredients-section">
+
+                    <h3>Ingredients</h3>
+
+                    <table class="ingredients">
+
+                        <thead>
+                            <tr>
+                                <th>✓</th>
+                                <th>Ingredient</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Chuck roast"></td>
+                                <td>Chuck roast</td>
+                                <td>2½ to 3 lb</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Olive oil"></td>
+                                <td>Olive oil</td>
+                                <td>1 tbsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Salt"></td>
+                                <td>Salt</td>
+                                <td>2 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Black pepper"></td>
+                                <td>Black pepper</td>
+                                <td>2 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Paprika"></td>
+                                <td>Paprika</td>
+                                <td>2 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Garlic powder"></td>
+                                <td>Garlic powder</td>
+                                <td>1 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Onion powder"></td>
+                                <td>Onion powder</td>
+                                <td>1 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Oregano"></td>
+                                <td>Oregano</td>
+                                <td>1 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Cayenne pepper"></td>
+                                <td>Cayenne pepper</td>
+                                <td>½ tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Brown sugar"></td>
+                                <td>Brown sugar</td>
+                                <td>2 tsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Yellow onion"></td>
+                                <td>Yellow onion, diced</td>
+                                <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Garlic"></td>
+                                <td>Garlic, minced</td>
+                                <td>5 cloves</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Tomato paste"></td>
+                                <td>Tomato paste</td>
+                                <td>2 tbsp</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Red wine"></td>
+                                <td>Dry red wine</td>
+                                <td>1 cup</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Beef broth"></td>
+                                <td>Beef broth</td>
+                                <td>2 cups</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Bay leaves"></td>
+                                <td>Bay leaves</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Fresh thyme"></td>
+                                <td>Fresh thyme</td>
+                                <td>As needed</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Carrots"></td>
+                                <td>Carrots, chopped</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Celery"></td>
+                                <td>Celery stalks, chopped</td>
+                                <td>3</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Baby potatoes"></td>
+                                <td>Baby potatoes, washed</td>
+                                <td>1½ lb</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Whole garlic cloves"></td>
+                                <td>Whole garlic cloves</td>
+                                <td>2</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="instructions-section">
+
+                    <h3>Instructions</h3>
+
+                    <ol class="instructions">
+
+                        <li>
+                            Preheat the oven to 300°F. Mix the salt,
+                            black pepper, paprika, garlic powder,
+                            onion powder, oregano, cayenne, and brown
+                            sugar. Season the roast generously on all sides.
+                        </li>
+
+                        <li>
+                            Heat the olive oil in a large Dutch oven over
+                            medium high heat. Sear the roast on all sides
+                            until browned, then remove it from the pot
+                            and set it aside.
+                        </li>
+
+                        <li>
+                            Add the diced onion to the same pot and cook
+                            until softened. Add the minced garlic and cook
+                            briefly. Stir in the tomato paste, then add
+                            the red wine. Scrape the browned pieces from
+                            the bottom of the pot and cook for a few minutes.
+                        </li>
+
+                        <li>
+                            Return the roast to the pot. Add the beef broth,
+                            bay leaves, and fresh thyme. Cover and bake at
+                            300°F for 2 hours.
+                        </li>
+
+                        <li>
+                            Remove the bay leaves and thyme stems. Add the
+                            carrots, celery, potatoes, and whole garlic
+                            cloves around the roast.
+                        </li>
+
+                        <li>
+                            Cover again and bake at 300°F for about another
+                            hour, or until the beef is tender enough to
+                            easily pull apart and the vegetables are cooked.
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <div class="tips">
+
+                <h3>Tips & Notes</h3>
+
+                <p>
+                    Let the roast cook slowly until the meat easily pulls
+                    apart with a fork. Serve it with the vegetables and
+                    plenty of the sauce from the pot.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 A Taste of Home<br>
+        <a href="mailto:magdalenabrelinska98@gmail.com">
+            Magdalena Brelinska-Meiers
+        </a>
+    </footer>
+
+</div>
+
+</body>
+</html>

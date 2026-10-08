@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Rosół | A Taste of Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tradycyjny polski rosół z kurczaka, warzyw korzeniowych i aromatycznych przypraw. Domowy przepis na rozgrzewającą zupę dla całej rodziny.">
+    <meta name="keywords" content="rosół, tradycyjny rosół, rosół z kurczaka, domowy rosół, polska zupa, przepisy rodzinne">
+    <link rel="stylesheet" type="text/css" href="atasteofhome.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header>
+
+        <div class="language">
+            <a href="rosol.html">EN</a> |
+            <a href="rosol_polish.html">PL</a>
+        </div>
+
+        <h1>
+            <a href="index_polish.html">A Taste of Home</a>
+        </h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index_polish.html">Strona główna</a></li>
+            <li><a href="breakfast_polish.html">Śniadania</a></li>
+            <li><a href="soups_polish.html">Zupy</a></li>
+            <li><a href="dinner.html">Dania główne</a></li>
+            <li><a href="desserts.html">Desery</a></li>
+            <li><a href="pantry.html">Spiżarnia</a></li>
+        </ul>
+    </nav>
+
+    <div class="recipe-menu">
+
+        <label for="recipeSelect">Wybierz przepis:</label>
+
+        <select id="recipeSelect"
+                onchange="if (this.value) window.location.href=this.value;">
+
+            <option value="">Wybierz przepis</option>
+
+            <option value="rosol_polish.html">
+                Rosół
+            </option>
+
+            <option value="warzywna_polish.html">
+                Zupa jarzynowa
+            </option>
+
+        </select>
+
+    </div>
+
+    <main>
+
+        <section class="recipe">
+
+            <h2 class="recipe-title">
+                Rosół
+            </h2>
+
+            <div class="recipe-intro">
+
+                <div class="recipe-description">
+
+                    <p>
+                        Rosół to dla Magdy prawdziwy smak domu.
+                        Ciepły, aromatyczny i pełen warzyw, od zawsze
+                        kojarzy jej się z rodzinnym domem i kuchnią mamy.
+                        Idealnie sprawdza się w chłodne dni, kiedy
+                        potrzebne jest coś rozgrzewającego, a także
+                        wtedy, gdy ktoś zaczyna się źle czuć i ma
+                        ochotę na miskę domowej, gorącej zupy.
+                    </p>
+
+                </div>
+
+                <img class="recipe-photo"
+                     src="rosol.jpeg"
+                     alt="Rosół">
+
+            </div>
+
+            <div class="recipe-details">
+
+                <div class="ingredients-section">
+
+                    <h3>Składniki</h3>
+
+                    <table class="ingredients">
+
+                        <thead>
+                            <tr>
+                                <th>✓</th>
+                                <th>Składnik</th>
+                                <th>Ilość</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Kurczak"></td>
+                                <td>Cały kurczak lub kawałki kurczaka</td>
+                                <td>1,5 kg</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Woda"></td>
+                                <td>Woda</td>
+                                <td>2 l</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Marchew"></td>
+                                <td>Marchew</td>
+                                <td>3 sztuki</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Korzeń pietruszki"></td>
+                                <td>Korzeń pietruszki</td>
+                                <td>2 sztuki</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Seler"></td>
+                                <td>Korzeń selera</td>
+                                <td>1 kawałek</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Por"></td>
+                                <td>Por</td>
+                                <td>1 sztuka</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Cebula"></td>
+                                <td>Cebula</td>
+                                <td>1 sztuka</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Liście laurowe"></td>
+                                <td>Liście laurowe</td>
+                                <td>2</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Ziele angielskie"></td>
+                                <td>Ziele angielskie</td>
+                                <td>4 ziarna</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Pieprz"></td>
+                                <td>Pieprz w ziarnach</td>
+                                <td>6 ziaren</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Sól"></td>
+                                <td>Sól</td>
+                                <td>Do smaku</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Pietruszka"></td>
+                                <td>Świeża natka pietruszki</td>
+                                <td>Do podania</td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" aria-label="Makaron"></td>
+                                <td>Cienki makaron jajeczny</td>
+                                <td>Do podania</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="instructions-section">
+
+                    <h3>Przygotowanie</h3>
+
+                    <ol class="instructions">
+
+                        <li>
+                            Włóż kurczaka do dużego garnka i zalej
+                            zimną wodą.
+                        </li>
+
+                        <li>
+                            Powoli podgrzewaj wodę. Kiedy na powierzchni
+                            pojawią się szumowiny, dokładnie je zbierz.
+                        </li>
+
+                        <li>
+                            Obierz marchew, pietruszkę i seler.
+                            Oczyść por i dodaj wszystkie warzywa
+                            do garnka.
+                        </li>
+
+                        <li>
+                            Obierz cebulę, przekrój ją na pół i lekko
+                            przypal od przeciętej strony na suchej
+                            patelni. Dodaj ją do rosołu.
+                        </li>
+
+                        <li>
+                            Dodaj liście laurowe, ziele angielskie,
+                            pieprz oraz sól.
+                        </li>
+
+                        <li>
+                            Gotuj rosół na małym ogniu przez około
+                            2 do 3 godzin. Rosół powinien tylko delikatnie
+                            pyrkać, a nie mocno się gotować.
+                        </li>
+
+                        <li>
+                            Wyjmij ugotowanego kurczaka z garnka.
+                            Oddziel mięso od kości i rozdrobnij
+                            je na mniejsze kawałki.
+                        </li>
+
+                        <li>
+                            Dodaj rozdrobnione mięso z powrotem
+                            do rosołu. Spróbuj i w razie potrzeby
+                            dopraw solą.
+                        </li>
+
+                        <li>
+                            Makaron ugotuj osobno. Rosół podawaj
+                            z makaronem, ugotowanymi warzywami,
+                            mięsem z kurczaka i świeżą natką pietruszki.
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <div class="tips">
+
+                <h3>Wskazówki i uwagi</h3>
+
+                <p>
+                    Dobry rosół potrzebuje czasu. Gotuj go powoli
+                    na małym ogniu i nie pozwól, aby mocno wrzał.
+                    Dzięki temu wywar będzie klarowny i aromatyczny.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2026 A Taste of Home<br>
+        <a href="mailto:magdalenabrelinska98@gmail.com">
+            Magdalena Brelinska-Meiers
+        </a>
+    </footer>
+
+</div>
+
+</body>
+</html>

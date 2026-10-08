@@ -1,0 +1,424 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EDE9;
+    color: #1A1A13;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #755747;
+    color: #F2EDE9;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: #C7B299;
+    font-weight: bold;
+    padding: 0;
+    font-size: 120%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    letter-spacing: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    color: #755747;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formheading {
+    border-top: 1px solid #C7B299;
+    padding-top: 1.5em;
+    margin-top: 1.5em;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2em;
+    background-color: #C7B299;
+}
+
+#wrapper {
+    background-color: #F2EDE9;
+}
+
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    background-color: #F2EDE9;
+    overflow: auto;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav li {
+    border-bottom: none;
+}
+
+nav a:link {
+    color: #1A1A13;
+}
+
+nav a:visited {
+    color: #1A1A13;
+}
+
+nav a:hover {
+    color: #755747;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #F2EDE9;
+}
+
+header a:visited {
+    color: #F2EDE9;
+}
+
+header a:hover {
+    color: #C7B299;
+}
+
+.language {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    letter-spacing: normal;
+}
+
+.language a {
+    text-decoration: none;
+}
+
+.language a:link {
+    color: #F2EDE9;
+}
+
+.language a:visited {
+    color: #F2EDE9;
+}
+
+.language a:hover {
+    color: #C7B299;
+}
+
+.recipe-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.recipe-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.recipe-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(26, 26, 19, 0);
+    transition: background-color 0.3s;
+}
+
+.recipe-overlay span {
+    color: #FFFFFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.recipe-card:hover .recipe-overlay {
+    background-color: rgba(26, 26, 19, 0.55);
+}
+
+.recipe-card:hover .recipe-overlay span {
+    opacity: 1;
+}
+
+.recipe-menu {
+    background-color: #E4D7C7;
+    padding: 0.75em 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    border-bottom: 1px solid #C7B299;
+}
+
+.recipe-menu label {
+    color: #755747;
+    font-weight: bold;
+}
+
+.recipe-menu select {
+    padding: 0.5em;
+    border: 1px solid #755747;
+    background-color: #F2EDE9;
+    color: #1A1A13;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.95em;
+}
+
+.recipe {
+    margin-bottom: 2em;
+}
+
+.recipe-title {
+    color: #755747;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.recipe-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 2em;
+}
+
+.recipe-description {
+    line-height: 1.6;
+}
+
+.recipe-photo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    border: 1px solid #C7B299;
+}
+
+/* Video on the fermented cucumber recipe pages */
+video.recipe-photo {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.recipe-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.ingredients-section {
+    width: 100%;
+}
+
+.instructions-section {
+    width: 100%;
+}
+
+.ingredients-section h3,
+.instructions-section h3,
+.tips h3 {
+    color: #755747;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+}
+
+.ingredients {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.ingredients th,
+.ingredients td {
+    border: 1px solid #C7B299;
+    padding: 0.65em;
+    text-align: left;
+}
+
+.ingredients th {
+    background-color: #C7B299;
+    color: #1A1A13;
+}
+
+.ingredients th:first-child,
+.ingredients td:first-child {
+    width: 50px;
+    text-align: center;
+}
+
+.ingredients input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.ingredients tr:has(input[type="checkbox"]:checked) td:not(:first-child) {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+.instructions {
+    margin-top: 0;
+    padding-left: 1.5em;
+    line-height: 1.5;
+}
+
+.instructions li {
+    margin-bottom: 0.8em;
+}
+
+.tips {
+    margin-top: 2em;
+    padding: 1em 1.25em;
+    border-left: 4px solid #755747;
+    background-color: #E4D7C7;
+}
+
+.tips p {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+input,
+textarea {
+    margin-bottom: .5em;
+}
+
+@media (min-width: 600px) {
+
+    form {
+        width: 60%;
+        max-width: 30em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2;
+        width: 9em;
+    }
+
+    .recipe-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recipe-intro {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .recipe-description {
+        width: 50%;
+    }
+
+    .recipe-photo {
+        width: 50%;
+    }
+
+    .recipe-details {
+        flex-direction: row;
+        gap: 3em;
+        align-items: stretch;
+    }
+
+    .ingredients-section {
+        width: 42%;
+        max-width: 450px;
+    }
+
+    .instructions-section {
+        width: 58%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #7C5C48;
+        box-shadow: 3px 3px #7C5C48;
+    }
+
+    .recipe-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .recipe-intro {
+        gap: 3em;
+    }
+
+    .recipe-details {
+        gap: 4em;
+    }
+}
